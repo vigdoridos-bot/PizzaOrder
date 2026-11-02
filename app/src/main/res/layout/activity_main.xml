@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:text="הזמנת פיצה"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:id="@+id/tvSizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="בחרו גודל:"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/rgSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="קטנה" />
+
+        <RadioButton
+            android:id="@+id/rbMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="בינונית" />
+
+        <RadioButton
+            android:id="@+id/rbLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="משפחתית" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvSizeLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="בחר עובי:"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/rgCrust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbThin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="דק" />
+
+        <RadioButton
+            android:id="@+id/rbThick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="עבה" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOrder"
+        android:text="הזמן"
+        android:layout_marginTop="24dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClean"
+        android:text="ניקוי"
+        android:layout_marginTop="24dp"
+        />
+
+</LinearLayout>
